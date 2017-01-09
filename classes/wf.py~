@@ -1,0 +1,23 @@
+import utils
+#datafolder = '/Users/romain/work/Auger/EASIER/LPSC/calibration/data/'
+
+class Wf:
+    def __init__(self, fname=''):
+        self.fname = fname
+
+        self.pin = 0
+        self.mean = 0
+        self.rms = 0
+        self.data = []
+
+    def filldata(self, data):
+        self.name = utils.readscopewf(self.fname)
+
+    def getmean(self, installfile, name):
+        f = open(installfile,'r+')
+        counter = 0
+        for l in f:
+
+
+
+
